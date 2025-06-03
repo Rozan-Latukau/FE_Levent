@@ -1,6 +1,6 @@
+import React from 'react';
 import { Form } from 'react-bootstrap';
-import TextInput from '@/components/TextInput';
-import PropTypes from 'prop-types';
+import TextInput from '../TextInput';
 
 function TextInputWithLabel({
     label,
@@ -23,14 +23,5 @@ function TextInputWithLabel({
         </Form.Group>
     );
 }
-
-TextInputWithLabel.propTypes = {
-    label: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    value: PropTypes.isRequired,
-    type: PropTypes.string,
-    onChange: PropTypes.isRequired,
-    placeholder: PropTypes.string,
-};
 
 export default TextInputWithLabel;

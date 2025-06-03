@@ -1,5 +1,5 @@
+import React from 'react';
 import { Form } from 'react-bootstrap';
-import PropTypes from "prop-types";
 
 function TextInput({ name, value, type, onChange, placeholder }) {
     return (
@@ -12,12 +12,5 @@ function TextInput({ name, value, type, onChange, placeholder }) {
         />
     );
 }
-TextInput.propTypes = {
-    name: PropTypes.string.isRequired,
-    value: PropTypes.isRequired,
-    type: PropTypes.string,
-    onChange: PropTypes.isRequired,
-    placeholder: PropTypes.string
-};
 
 export default TextInput;
